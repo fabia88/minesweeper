@@ -44,10 +44,10 @@ export class Board {
   }
 
   print(board) {
-    let boardNice = board.map(function(element) {
+    let boardToPrint = board.map(function(element) {
       return element.join(" | ");
     });
-    console.log(boardNice.join("\n"));
+    console.log(boardToPrint.join("\n"));
   }
 
   static generatePlayerBoard(numberOfRows, numberOfColumns) {
